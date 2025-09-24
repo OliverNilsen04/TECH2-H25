@@ -18,7 +18,6 @@ Tasks
 4.  Use the notebook lecture1-benchmark.ipynb to benchmark your implementation 
     against NumPy's argmax().
 """
-
 import numpy as np
 
 def argmax(lst):
