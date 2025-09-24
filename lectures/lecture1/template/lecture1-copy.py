@@ -24,19 +24,26 @@ def argmax(lst):
     
     N = len(lst)
 
+    if N == 0:
+        raise ValueError('Empty lists are not supported')
+
     value_max = - np.inf
     imax = 0
 
     for i in range(N):
+        
         value = lst[i]
+        
         if value > value_max:
             #update index og largest element
             imax = i
+            
             value_max = value
     
     return imax
 
-values =  [2, 3, -1, 7, 4]
+#values =  [2, 3, -1, 7, 4]
+values = []
 
 i = argmax(values)
 print(f'Index of max value: {i}')
