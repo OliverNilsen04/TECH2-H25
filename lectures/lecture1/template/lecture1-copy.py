@@ -42,8 +42,8 @@ def argmax(lst):
     
     return imax
 
-#values =  [2, 3, -1, 7, 4]
-values = []
+values =  [2, 3, -1, 7, 4]
+#values = []
 
 i = argmax(values)
 print(f'Index of max value: {i}')
